@@ -9,6 +9,7 @@ public interface ProductService
     //save method added
     String saveProduct(ProductDetails product);
 
+    //getalldata method added
     List<ProductDetails> getAllProduct();
 
     ProductDetails getById(int id);
