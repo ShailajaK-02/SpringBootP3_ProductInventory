@@ -18,5 +18,6 @@ public interface ProductService
     //delete method
     String deleteProduct(int id);
 
+    //update method
     ProductDetails updateProduct(int id, ProductDetails newPro);
 }
