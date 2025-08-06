@@ -20,4 +20,7 @@ public interface ProductService
 
     //update method
     ProductDetails updateProduct(int id, ProductDetails newPro);
+
+    //save list of products
+    String saveProList(List<ProductDetails> productList);
 }

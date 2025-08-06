@@ -52,4 +52,11 @@ public class ProductController {
        ProductDetails updateProduct = productService.updateProduct(id,pro);
        return new ResponseEntity<>(updateProduct,HttpStatus.OK);
     }
+
+    //add list of products
+    @PostMapping("/addList")
+    public ResponseEntity<String> addList(List<ProductDetails> productList){
+        productService.saveProList(productList);
+        return new ResponseEntity<>("List saved",HttpStatus.OK);
+    }
 }
