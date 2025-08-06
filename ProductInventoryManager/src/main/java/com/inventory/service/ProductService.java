@@ -12,6 +12,7 @@ public interface ProductService
     //getalldata method added
     List<ProductDetails> getAllProduct();
 
+    //getbyid method added
     ProductDetails getById(int id);
 
     String deleteProduct(int id);
