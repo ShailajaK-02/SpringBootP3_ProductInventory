@@ -15,6 +15,7 @@ public interface ProductService
     //getbyid method added
     ProductDetails getById(int id);
 
+    //delete method
     String deleteProduct(int id);
 
     ProductDetails updateProduct(int id, ProductDetails newPro);
