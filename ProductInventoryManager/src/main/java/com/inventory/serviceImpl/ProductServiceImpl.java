@@ -32,4 +32,20 @@ public class ProductServiceImpl implements ProductService
         ProductDetails productDetails = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found" +id));
         return productDetails;
     }
+
+    @Override
+    public String deleteProduct(int id) {
+        repository.deleteById(id);
+        return "Product deleted";
+    }
+
+    @Override
+    public ProductDetails updateProduct(int id, ProductDetails newPro) {
+        ProductDetails productDetails = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
+
+        productDetails.setPrice(newPro.getPrice());
+
+        ProductDetails updatedPro = repository.save(productDetails);
+        return updatedPro;
+    }
 }
