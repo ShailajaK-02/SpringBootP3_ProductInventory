@@ -46,7 +46,7 @@ public class ProductController {
         return new ResponseEntity<>("Product deleted",HttpStatus.OK);
     }
 
-    //update
+    //update api added
     @PutMapping("/update/{id}")
     public ResponseEntity<ProductDetails> updatePro(@PathVariable("id") int id,@RequestBody ProductDetails pro){
        ProductDetails updateProduct = productService.updateProduct(id,pro);
