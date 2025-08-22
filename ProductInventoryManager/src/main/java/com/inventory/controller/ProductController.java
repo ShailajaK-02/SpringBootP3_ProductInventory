@@ -25,7 +25,7 @@ public class ProductController {
         return new ResponseEntity<>("Product added", HttpStatus.CREATED);
     }
 
-    //Get all product
+    //Get all product api added
     @GetMapping("/getAllProduct")
     public ResponseEntity<List<ProductDetails>> getAllProduct(){
         List<ProductDetails> productDetailsList = productService.getAllProduct();
