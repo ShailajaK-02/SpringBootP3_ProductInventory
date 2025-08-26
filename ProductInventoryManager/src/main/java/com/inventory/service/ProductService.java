@@ -21,6 +21,6 @@ public interface ProductService
     //update method added
     ProductDetails updateProduct(int id, ProductDetails newPro);
 
-    //save list of products
+    //save list of products added
     String saveProList(List<ProductDetails> productList);
 }
