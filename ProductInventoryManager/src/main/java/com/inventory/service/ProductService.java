@@ -9,7 +9,7 @@ public interface ProductService
     //save method
     String saveProduct(ProductDetails product);
 
-    //getalldata method added
+    //getalldata method
     List<ProductDetails> getAllProduct();
 
     //getbyid method added
