@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ProductService
 {
-    //save method added
+    //save method
     String saveProduct(ProductDetails product);
 
     //getalldata method added
