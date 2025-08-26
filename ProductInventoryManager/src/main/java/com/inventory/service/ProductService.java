@@ -12,7 +12,7 @@ public interface ProductService
     //getalldata method
     List<ProductDetails> getAllProduct();
 
-    //getbyid method added
+    //getbyid method
     ProductDetails getById(int id);
 
     //delete method
