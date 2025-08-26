@@ -18,7 +18,7 @@ public interface ProductService
     //delete method added
     String deleteProduct(int id);
 
-    //update method
+    //update method added
     ProductDetails updateProduct(int id, ProductDetails newPro);
 
     //save list of products
