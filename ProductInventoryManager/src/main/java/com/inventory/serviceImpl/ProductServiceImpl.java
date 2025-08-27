@@ -53,6 +53,7 @@ public class ProductServiceImpl implements ProductService
         return updatedPro;
     }
 
+    //list implemented
     @Override
     public String saveProList(List<ProductDetails> productList) {
         repository.saveAll(productList);
