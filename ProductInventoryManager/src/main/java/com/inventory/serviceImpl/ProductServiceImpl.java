@@ -42,6 +42,7 @@ public class ProductServiceImpl implements ProductService
         return "Product deleted";
     }
 
+    //update implemented
     @Override
     public ProductDetails updateProduct(int id, ProductDetails newPro) {
         ProductDetails productDetails = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
