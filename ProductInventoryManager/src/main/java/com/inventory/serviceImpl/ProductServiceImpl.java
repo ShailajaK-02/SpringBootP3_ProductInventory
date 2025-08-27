@@ -28,6 +28,7 @@ public class ProductServiceImpl implements ProductService
         return productDetails;
     }
 
+    //getbyid implemented
     @Override
     public ProductDetails getById(int id) {
         ProductDetails productDetails = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found" +id));
