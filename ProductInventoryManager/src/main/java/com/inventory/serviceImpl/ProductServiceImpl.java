@@ -21,6 +21,7 @@ public class ProductServiceImpl implements ProductService
         return "Product added";
     }
 
+    //getalldata implemented
     @Override
     public List<ProductDetails> getAllProduct() {
         List<ProductDetails> productDetails = repository.findAll();
