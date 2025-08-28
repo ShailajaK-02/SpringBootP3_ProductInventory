@@ -15,6 +15,7 @@ public class ProductServiceImpl implements ProductService
     @Autowired
     private ProductRepository repository;
 
+    //save method added
     @Override
     public String saveProduct(ProductDetails product) {
         ProductDetails productDetails = repository.save(product);
