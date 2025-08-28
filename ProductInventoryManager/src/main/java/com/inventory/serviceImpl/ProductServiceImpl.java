@@ -60,5 +60,4 @@ public class ProductServiceImpl implements ProductService
         repository.saveAll(productList);
         return "List saved";
     }
-
 }
