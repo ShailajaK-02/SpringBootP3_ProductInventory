@@ -16,7 +16,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    //Add product
+    //Add product api
     @PostMapping("/addProduct")
     public ResponseEntity<String> addProduct(@RequestBody ProductDetails product){
         System.err.println(product);
