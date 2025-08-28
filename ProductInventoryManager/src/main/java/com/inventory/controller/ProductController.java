@@ -38,7 +38,7 @@ public class ProductController {
         return new ResponseEntity<>(productById,HttpStatus.OK);
     }
 
-    //delete api added
+    //delete api
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deletePro(@PathVariable("id") int id){
         productService.deleteProduct(id);
