@@ -4,6 +4,7 @@ import com.inventory.entity.ProductDetails;
 
 import java.util.List;
 
+//service
 public interface ProductService
 {
     //save method
